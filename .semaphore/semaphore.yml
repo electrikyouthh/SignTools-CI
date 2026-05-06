@@ -18,5 +18,8 @@ blocks:
             - PYTHONUNBUFFERED=1 ./sign.py
             - cache delete session
             - cache store session ~/.fastlane
-      secrets:
-        - name: ios-signer
+  - name: 'Block #2'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
